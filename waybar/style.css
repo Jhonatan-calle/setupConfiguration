@@ -1,0 +1,32 @@
+window#waybar {
+    background: rgba(30, 30, 46, 0.8); /* Color oscuro translúcido */
+    color: #cdd6f4;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #f5c2e7;
+}
+
+#workspaces button.active {
+    color: #89b4fa;
+    border-bottom: 3px solid #89b4fa;
+}
+
+#network, #battery, #clock {
+    padding: 0 10px;
+    margin: 4px;
+    border-radius: 8px;
+    background-color: #313244;
+}
+
+#battery.critical {
+    color: #f38ba8; /* Rojo si queda poca batería */
+}
+
+#battery.charging {
+    color: #a6e3a1; /* Verde al cargar */
+}
